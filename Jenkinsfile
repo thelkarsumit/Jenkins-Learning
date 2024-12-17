@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo "Testing Maven Version"
                 sh '''
-                echo "maven -v"
+                  maven -v
                 '''
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo "Testing Git Version"
                 sh '''
-                echo "git -version"
+                  git -version
                 '''
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo 'Testing SonarQube Version'
                 sh '''
-                echo "sudo systemctl status sonarqube"
+                sudo systemctl status sonarqube
                 '''
             }
         }
