@@ -16,15 +16,15 @@ pipeline {
             steps {
                 echo "Testing Git Version"
                 sh '''
-                echo "Testing is done"
+                echo "git -version"
                 '''
             }
         }
         stage('SonarQube') {
             steps {
-                echo 'Deliver....'
+                echo 'Testing SonarQube Version'
                 sh '''
-                echo "doing delivery stuff"
+                echo "sudo systemctl status sonarqube"
                 '''
             }
         }
